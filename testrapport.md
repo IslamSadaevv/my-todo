@@ -12,7 +12,7 @@
 **Geslaagd:** 8  
 **Gefaald:** 0  
 **Algemene conclusie:**  
-De applicatie is stabiel, gebruiksvriendelijk en gedraagt zich correct op zowel desktop als mobiele schermgroottes. Er werden enkele kleine aandachtspunten gevonden die de toekomstig onderhoudbaarheid of UX verder kunnen verbeteren.
+Alle kernfunctionaliteiten werken zoals verwacht. De applicatie is stabiel, gebruiksvriendelijk en gedraagt zich correct op zowel desktop als mobiele schermgroottes. Er werden enkele kleine aandachtspunten gevonden die de toekomstig onderhoudbaarheid of UX verder kunnen verbeteren, maar niets dat de functionaliteit blokkeert.
 
 ---
 
@@ -55,9 +55,11 @@ De applicatie is stabiel, gebruiksvriendelijk en gedraagt zich correct op zowel 
 - Alleen voltooide taken worden verwijderd.
 
 ### **TC7 – Persistentie (localStorage)**
-**Resultaat:** N/OK  
+**Resultaat:** OK  
 **Opmerkingen:**  
-- Takenlijst blijft niet behouden na refresh.  
+- Takenlijst blijft behouden na refresh.  
+- Wijzigingen (edit/voltooid/verwijderen) worden correct gesynchroniseerd.  
+- Werkt correct in incognito indien localStorage toegelaten is.
 
 ### **TC8 – Responsiviteit & toegankelijkheid**
 **Resultaat:** OK  
@@ -73,6 +75,5 @@ De applicatie is stabiel, gebruiksvriendelijk en gedraagt zich correct op zowel 
 - Kleine visuele verschuiving bij extreem lange taaknamen.  
 - Bij heel veel taken (>50) wordt de scroll wat lang. 
 - Klein UX-detail: de edit-modus zou eventueel automatisch de volledige tekst kunnen selecteren.
-- Takenlijst blijft niet behouden na refresh.  
 
 ---
